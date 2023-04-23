@@ -1,0 +1,13 @@
+{
+    "name": "mr-yupi/bitrix-docker",
+    "description": "docker compose for bitrix",
+    "type": "library",
+    "autoload": {},
+    "authors": [
+        {
+            "name": "Yury Stifeev"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
