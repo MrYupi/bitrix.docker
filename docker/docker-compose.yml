@@ -25,6 +25,7 @@ services:
     container_name: ${PROJECT_NAME}_php
     volumes:
       - ${DOCUMENT_ROOT}:/app
+      - ../logs/xdebug:/var/log/xdebug
     working_dir: /app
     depends_on: [apache]
 
