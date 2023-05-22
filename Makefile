@@ -14,3 +14,6 @@ down:
 
 php-bash:
 	docker exec -it $(PROJECT_NAME)_php bash
+
+node-bash:
+	docker exec -it $(PROJECT_NAME)_node bash
