@@ -88,3 +88,6 @@ fabric.properties
 
 #Potential server document root
 /src
+
+#Docker database
+/docker/databases
