@@ -25,6 +25,9 @@ RUN apt-get update && apt-get install -y \
     opcache \
     exif
 
+RUN pecl install xhprof-2.3.9 \
+    && docker-php-ext-enable xhprof
+
 RUN docker-php-ext-configure gd --with-freetype --with-jpeg --with-webp \
 && docker-php-ext-install gd
 
