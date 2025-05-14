@@ -9,6 +9,7 @@ services:
     volumes:
       - ${DOCUMENT_ROOT}:/app
       - ../logs/nginx:/var/log/nginx/
+      - ./nginx/conf:/etc/nginx/conf.d
     working_dir: /app
     depends_on: [apache]
 
