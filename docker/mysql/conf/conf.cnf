@@ -1,5 +1,5 @@
 [mysqld]
-innodb_buffer_pool_size=8G
+innodb_buffer_pool_size=2G
 innodb_redo_log_capacity=1G
 skip-log-bin
 disable_log_bin
