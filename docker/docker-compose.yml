@@ -59,14 +59,3 @@ services:
     working_dir: /app
     stdin_open: true
     tty: true
-
-  xhprof-viewer:
-    build: ./xhprof-viewer
-    container_name: ${COMPOSE_PROJECT_NAME}_xhprof-viewer
-    restart: unless-stopped
-    volumes:
-      - ./xhprof-viewer/viewer:/var/www/html/
-      - ../logs/xhprof:/var/log/xhprof
-    working_dir: /app
-    ports:
-      - ${XHPROF_READER_PORT}:80
