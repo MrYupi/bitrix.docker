@@ -18,6 +18,7 @@
 http://<домен-сайта> по 
 ссылке http://<домен-сайта>/?SPX_UI_URI=/ будет доступны отчеты ![img.png](./docs/img/img_5.png)
 Если используете postman или другой сервис который делает запросы указываются специальные куки ` SPX_ENABLED=1; SPX_KEY=dev`
+
 ![img.png](./docs/img/img_6.png)
 
 Используется расширение - https://github.com/NoiseByNorthwest/php-spx
