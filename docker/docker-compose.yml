@@ -22,13 +22,15 @@ services:
       - ../logs/apache:/var/log/apache
     working_dir: /app
 
-
   php:
     build: ./${PHP_VERSION}
     container_name: ${COMPOSE_PROJECT_NAME}_php
     restart: always
+    environment:
+      - PHP_INI_SCAN_DIR=:/usr/local/etc/php/conf.d/conf
     volumes:
       - ${DOCUMENT_ROOT}:/app
+      - ./${PHP_VERSION}/conf:/usr/local/etc/php/conf.d/conf
       - ../logs/xdebug:/var/log/xdebug
       - ../logs/xhprof:/var/log/xhprof
     working_dir: /app

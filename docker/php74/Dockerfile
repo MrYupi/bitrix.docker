@@ -34,6 +34,3 @@ RUN pecl install xdebug-3.1.5 \
 RUN curl -sS https://getcomposer.org/installer | php -- \
     --filename=composer \
     --install-dir=/usr/local/bin
-
-COPY my.ini /usr/local/etc/php/conf.d/
-COPY xdebug.ini /usr/local/etc/php/conf.d/
