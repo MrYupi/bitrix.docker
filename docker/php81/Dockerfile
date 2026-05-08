@@ -34,3 +34,12 @@ RUN pecl install xdebug-3.2.1 \
 RUN curl -sS https://getcomposer.org/installer | php -- \
     --filename=composer \
     --install-dir=/usr/local/bin
+
+#Profiler
+RUN cd /usr/lib && git clone https://github.com/NoiseByNorthwest/php-spx.git \
+    && cd /usr/lib/php-spx  \
+    && git checkout release/latest \
+    && phpize \
+    && ./configure \
+    && make \
+    && make install

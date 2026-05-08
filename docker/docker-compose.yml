@@ -32,7 +32,7 @@ services:
       - ${DOCUMENT_ROOT}:/app
       - ./${PHP_VERSION}/conf:/usr/local/etc/php/conf.d/conf
       - ../logs/xdebug:/var/log/xdebug
-      - ../logs/xhprof:/var/log/xhprof
+      - ../logs/spx:/var/log/spx
     working_dir: /app
     depends_on: [apache]
 
