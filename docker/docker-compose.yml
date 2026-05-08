@@ -61,3 +61,12 @@ services:
     working_dir: /app
     stdin_open: true
     tty: true
+
+  mailhog:
+    image: mailhog/mailhog
+    container_name: ${COMPOSE_PROJECT_NAME}_mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
+    logging:
+      driver: none
